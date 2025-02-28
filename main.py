@@ -147,11 +147,6 @@ def generate_level(level):
 
 def move(hero, movement):
     x, y = hero.pos
-    print(level_map[x][y - 1])
-    print(level_map[x][y + 1])
-    print(level_map[x - 1][y])
-    print(level_map[x][y + 1])
-    print()
     if movement == "up":
         if y > 0 and level_map[y - 1][x] == ".":
             hero.move(x, y - 1)
